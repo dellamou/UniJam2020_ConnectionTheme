@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{129ee4be-8e18-03f0-5564-5f1bd69e9087}</ProjectGuid>
+    <ProjectGuid>{4a8f88ab-20cb-161f-78cb-90053b0efa08}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -36,15 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
-     <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
-     <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
-     <Compile Include="Assets\Scripts\ItemManager\DestroySelfWhenCollide.cs" />
-     <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
-     <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
-     <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
-     <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
-     <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -602,11 +594,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4a8f88ab-20cb-161f-78cb-90053b0efa08}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
