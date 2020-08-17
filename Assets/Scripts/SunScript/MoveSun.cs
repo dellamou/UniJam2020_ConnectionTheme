@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MoveSun : MonoBehaviour
 {
-    public float DayLength;
+    public float DayLen_Disable_by_Zero;
     private float _rotationSpeed;
  
     void Update(){
-        _rotationSpeed = Time.deltaTime / DayLength;
+        _rotationSpeed = Time.deltaTime / DayLen_Disable_by_Zero;
         transform.Rotate (0, _rotationSpeed, 0);
     }
 }
