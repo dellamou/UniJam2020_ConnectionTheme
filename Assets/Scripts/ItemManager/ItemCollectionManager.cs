@@ -8,10 +8,26 @@ using UnityEngine.SceneManagement;
 public class ItemCollectionManager : MonoBehaviour
 {
     // the number of quest items player got
-    public int itemCounter;
+    public int pizza;
+    public bool axe;
 
     private void Start()
     {
-        this.itemCounter = 0;
+        this.pizza = 0;
+        this.axe = false;
+    }
+
+    public void pickUp(string item)
+    {
+        switch (item)
+        {
+            case "Pizza":
+                this.pizza++;
+                break;
+            case "Axe":
+                this.axe = true;
+                break;
+        }
+        
     }
 }
