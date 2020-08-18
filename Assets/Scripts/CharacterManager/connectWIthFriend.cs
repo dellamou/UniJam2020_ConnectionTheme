@@ -20,10 +20,12 @@ public class connectWIthFriend : MonoBehaviour
     private LineRenderer lineRenderer;
     private float distance;
 
+    private float destHeight;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        destHeight = origin.position.y;
     }
 
     // Update is called once per frame
@@ -41,6 +43,6 @@ public class connectWIthFriend : MonoBehaviour
         lineRenderer.startColor = currentColor;
         lineRenderer.startWidth = normalLineWidth * (1-distance/furthestDistance);
         lineRenderer.SetPosition(0, origin.position);
-        lineRenderer.SetPosition(1, dest.position);
+        lineRenderer.SetPosition(1, new Vector3(dest.position.x, destHeight, dest.position.z));
     }
 }
