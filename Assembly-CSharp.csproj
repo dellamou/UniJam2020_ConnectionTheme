@@ -68,12 +68,12 @@
     <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
     <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
     <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
-    <Compile Include="Assets\Scripts\ItemManager\PressFToDestroy.cs" />
-    <Compile Include="Assets\Scripts\ItemManager\PressFToPickUp.cs" />
+    <Compile Include="Assets\Scripts\ItemManager\PressFToInteract.cs" />
     <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
     <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
     <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
     <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />
+    <Compile Include="Assets\Scripts\TextManager\TextFadeAway.cs" />
     <None Include="Assets\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -11,6 +11,10 @@ public class ItemCollectionManager : MonoBehaviour
     public int pizza;
     public bool axe;
 
+    public Text ItemCollection;
+    public Text MidScreenNotice;
+    public Text TopScreenNotice;
+
     private void Start()
     {
         this.pizza = 0;
@@ -23,11 +27,27 @@ public class ItemCollectionManager : MonoBehaviour
         {
             case "Pizza":
                 this.pizza++;
+                TopScreenNotice.text = "You got the Pizza";
                 break;
             case "Axe":
                 this.axe = true;
+                TopScreenNotice.text = "You got the Axe";
                 break;
         }
         
+    }
+
+    private void Update()
+    {
+        string output = "Collected Items: \n";
+        if (this.pizza > 0)
+        {
+            output += "Pizza " + pizza + "\n";
+        }
+        if (this.axe)
+        {
+            output += "Axe" + "\n";
+        }
+        ItemCollection.text = output;
     }
 }
