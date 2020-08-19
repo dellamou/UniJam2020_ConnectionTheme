@@ -27,11 +27,11 @@ public class ItemCollectionManager : MonoBehaviour
         {
             case "Pizza":
                 this.pizza++;
-                TopScreenNotice.text = "You picked up Pizza";
+                TopScreenNotice.text = "You got the Pizza";
                 break;
             case "Axe":
                 this.axe = true;
-                TopScreenNotice.text = "You picked up Axe";
+                TopScreenNotice.text = "You got the Axe";
                 break;
         }
         
