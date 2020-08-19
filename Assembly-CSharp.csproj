@@ -51,7 +51,45 @@
      <Compile Include="Assets\Scripts\TextManager\TextFadeAway.cs" />
      <None Include="Assets\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
     <Reference Include="UnityEngine">
-        <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity/Hub/Editor/2019.1.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.1.8f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
+    <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
+    <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
+    <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
+    <Compile Include="Assets\Scripts\ItemManager\PressFToInteract.cs" />
+    <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
+    <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
+    <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
+    <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />
+    <Compile Include="Assets\Scripts\TextManager\TextFadeAway.cs" />
+    <None Include="Assets\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
