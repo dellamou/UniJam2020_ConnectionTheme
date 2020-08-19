@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
      <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager\PressFToInteract.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\itemMotion.cs" />
+     <Compile Include="Assets\Scripts\MiniMapScripts\DisableMiniMapShadow.cs" />
      <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
