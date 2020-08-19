@@ -28,16 +28,17 @@ public class PressFToInteract : MonoBehaviour
         distance = Vector3.Distance(thisPos, playerPos);
         if (distance <= interactRegion)
         {
-            MidScreenNotice.text = "Press F to Interact";
+            MidScreenNotice.text = "Press F to pick up " + this.tag;
 
             if (this.tag == "Door")
             {
+                MidScreenNotice.text = "Press F to open this " + this.tag;
                 if (Input.GetKey(KeyCode.F))
                 {
                     if (player.GetComponent<ItemCollectionManager>().axe)
                     {
                         Destroy(this.gameObject);
-                        TopScreenNotice.text = "Great! The door is now broken!";
+                        TopScreenNotice.text = "Now I need to keep going...";
                         MidScreenNotice.text = "";
                     }
                     else
@@ -46,7 +47,8 @@ public class PressFToInteract : MonoBehaviour
                     }
 
                 }
-            } else
+            } 
+            else
             {
                 if (Input.GetKey(KeyCode.F))
                 {

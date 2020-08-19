@@ -28,8 +28,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Shininess: 0.078125
-    - _SpecPower: 3.4296174
+    - _Shininess: 0.01
+    - _SpecPower: 5
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.85358655, g: 0.8665728, b: 0.8731343, a: 0}
