@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
+     <Compile Include="Assets\Scripts\DisableMiniMapShadow.cs" />
      <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager\PressFToInteract.cs" />
      <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
