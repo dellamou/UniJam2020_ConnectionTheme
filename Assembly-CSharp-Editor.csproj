@@ -448,6 +448,12 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>/Users/lich2000117/Desktop/uniComp/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>/Users/lich2000117/Desktop/uniComp/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>/Users/lich2000117/Desktop/uniComp/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>/Users/lich2000117/Desktop/uniComp/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
