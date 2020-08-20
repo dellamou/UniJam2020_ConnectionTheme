@@ -219,6 +219,11 @@
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 10daf82... revert
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.VR">
@@ -625,6 +630,15 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>/Users/lich2000117/Desktop/uniComp/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+<<<<<<< HEAD
+=======
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.3f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+>>>>>>> parent of 6a3d5c1... finalising minimap
+=======
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.3f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+>>>>>>> parent of 6a3d5c1... finalising minimap
+=======
+>>>>>>> parent of 10daf82... revert
     </Reference>
   </ItemGroup>
   <ItemGroup>
