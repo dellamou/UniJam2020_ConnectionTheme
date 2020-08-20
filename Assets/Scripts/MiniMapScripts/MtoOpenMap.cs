@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MtoOpenMap : MonoBehaviour
 {
+    public GameObject beautifyUI;
+
     private Canvas MapCanvas;
     private GameObject DimScreenPlane; 
     private MeshRenderer dimCam;
@@ -15,6 +17,7 @@ public class MtoOpenMap : MonoBehaviour
         this.dimCam=DimScreenPlane.GetComponent<MeshRenderer>();
         MapCanvas.enabled = false;
         dimCam.enabled = false;
+        beautifyUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class MtoOpenMap : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M)){
             MapCanvas.enabled = !MapCanvas.enabled;
             dimCam.enabled = !dimCam.enabled;
+            beautifyUI.SetActive(!beautifyUI.activeSelf);
         }
     }
 }

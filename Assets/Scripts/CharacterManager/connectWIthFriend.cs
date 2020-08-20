@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class connectWIthFriend : MonoBehaviour
 {
@@ -19,8 +20,6 @@ public class connectWIthFriend : MonoBehaviour
 
     public float lineDrawSpeed = 6f;
 
-    public float stopTime = 10f;
-
     private LineRenderer lineRenderer;
     private float distance;
 
@@ -28,6 +27,15 @@ public class connectWIthFriend : MonoBehaviour
 
     private IEnumerator coroutine;
     private bool CR_running = false;
+
+    private bool renderedText = false;
+
+    public float health = 100f;
+    public float fullHealth = 100f;
+    public float healthTakePerMS = 1f;
+    public float healthRecoverPerMS = 2f;
+
+    public Text TopScreenNotice;
 
     // Start is called before the first frame update
     void Start()
@@ -46,12 +54,17 @@ public class connectWIthFriend : MonoBehaviour
         if (distance > warningDistance)
         {
             currentColor = warningColor;
-            coroutine = WaitThenStopGame(stopTime);
+            coroutine = WaitThenTakeHealth(0.1f);
             StartCoroutine(coroutine);
-        } else if (CR_running && distance <= warningDistance) {
-            Debug.Log("??");
-            StopCoroutine(coroutine);
-            CR_running = false;
+            if (!renderedText) // render text only once
+            {
+                TopScreenNotice.text = "I'm lossing the connection with my friend! I have to get closer to him!";
+                renderedText = true;
+            }
+        } else {
+            renderedText = false; // reset
+            coroutine = WaitThenRecoverHealth(0.1f);
+            StartCoroutine(coroutine);
         }
 
         lineRenderer.startColor = currentColor;
@@ -60,15 +73,26 @@ public class connectWIthFriend : MonoBehaviour
         lineRenderer.SetPosition(1, new Vector3(dest.position.x, destHeight, dest.position.z));
     }
 
-    private IEnumerator WaitThenStopGame(float waitTime)
+    private IEnumerator WaitThenTakeHealth(float waitTime)
     {
-        CR_running = true;
         yield return new WaitForSeconds(waitTime);
-        if (CR_running)
+        health -= healthTakePerMS;
+        if (health <= 0)
         {
             SceneManager.LoadScene("BadEnd");
-            CR_running = false;
         }
-        CR_running = false;
+    }
+
+    private IEnumerator WaitThenRecoverHealth(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        if (health <= fullHealth - healthRecoverPerMS)
+        {
+            health += healthRecoverPerMS;
+        }
+        else if (health < fullHealth && health > fullHealth - healthRecoverPerMS)
+        {
+            health = fullHealth;
+        }
     }
 }
