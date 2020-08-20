@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PressFToInteract : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public float interactRegion = 2f;
 
     private Vector3 playerPos;
@@ -20,6 +20,7 @@ public class PressFToInteract : MonoBehaviour
     void Start()
     {
         thisPos = this.transform.position;
+        player = GameObject.Find("Player");
     }
 
     void Update()
