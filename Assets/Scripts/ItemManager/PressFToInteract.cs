@@ -21,7 +21,6 @@ public class PressFToInteract : MonoBehaviour
     void Start()
     {
         thisPos = this.transform.position;
-        this.MidScreenNotice = MidScreenNoticeObj.TMP_Text;
     }
 
     void Update()
