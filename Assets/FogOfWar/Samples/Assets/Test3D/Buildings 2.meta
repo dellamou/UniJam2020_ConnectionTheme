@@ -1,9 +1,20 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4a5388d983f6c4939a1d4d8b0ebce41b
 folderAsset: yes
 timeCreated: 1452218455
 licenseType: Store
 DefaultImporter:
+=======
+<<<<<<< HEAD:Assets/FogOfWar/Samples/Assets/Test2D 2.meta
+guid: dc8a78e280c7a430f8405029b38b0b5f
+=======
+guid: 4a5388d983f6c4939a1d4d8b0ebce41b
+>>>>>>> master:Assets/FogOfWar/Samples/Assets/Test3D/Buildings 2.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+>>>>>>> master
   userData: 
   assetBundleName: 
   assetBundleVariant: 
