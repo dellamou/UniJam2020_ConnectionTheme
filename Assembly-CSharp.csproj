@@ -95,6 +95,7 @@
      <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
      <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />
      <Compile Include="Assets\Scripts\TextManager\TextFadeAway.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

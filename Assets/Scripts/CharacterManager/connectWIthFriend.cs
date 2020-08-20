@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class connectWIthFriend : MonoBehaviour
 {
     public Transform origin;
@@ -17,10 +19,14 @@ public class connectWIthFriend : MonoBehaviour
 
     public float lineDrawSpeed = 6f;
 
+    public float stopTime = 10f;
+
     private LineRenderer lineRenderer;
     private float distance;
 
     private float destHeight;
+
+    private IEnumerator coroutine;
 
     // Start is called before the first frame update
     void Start()
@@ -38,11 +44,19 @@ public class connectWIthFriend : MonoBehaviour
         if (distance > warningDistance)
         {
             currentColor = warningColor;
+            coroutine = WaitThenStopGame(stopTime);
+            StartCoroutine(coroutine);
         }
 
         lineRenderer.startColor = currentColor;
         lineRenderer.startWidth = normalLineWidth * (1-distance/furthestDistance);
         lineRenderer.SetPosition(0, origin.position);
         lineRenderer.SetPosition(1, new Vector3(dest.position.x, destHeight, dest.position.z));
+    }
+
+    private IEnumerator WaitThenStopGame(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene("BadEnd");
     }
 }
