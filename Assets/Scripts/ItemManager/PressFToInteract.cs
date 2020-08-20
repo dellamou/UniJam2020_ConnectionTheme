@@ -14,7 +14,8 @@ public class PressFToInteract : MonoBehaviour
     private Vector3 thisPos;
     private float distance;
 
-    public Text MidScreenNotice;
+    public GameObject MidScreenNoticeObj;
+    private Text MidScreenNotice;
     public Text TopScreenNotice;
 
     void Start()
