@@ -125,6 +125,7 @@
      <None Include="Assets\FogOfWar\Core\FogOfWarHardware.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -690,6 +691,8 @@
         <HintPath>/Users/lich2000117/Desktop/uniComp/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
 =======
+=======
+>>>>>>> parent of 6a3d5c1... finalising minimap
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -1254,6 +1257,9 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
+<<<<<<< HEAD
+>>>>>>> parent of 6a3d5c1... finalising minimap
+=======
 >>>>>>> parent of 6a3d5c1... finalising minimap
   </ItemGroup>
   <ItemGroup>
