@@ -14,12 +14,14 @@ public class PressFToInteract : MonoBehaviour
     private Vector3 thisPos;
     private float distance;
 
-    public Text MidScreenNotice;
+    public GameObject MidScreenNoticeObj;
+    private Text MidScreenNotice;
     public Text TopScreenNotice;
 
     void Start()
     {
         thisPos = this.transform.position;
+        this.MidScreenNotice = MidScreenNoticeObj.TMP_Text;
     }
 
     void Update()
