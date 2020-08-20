@@ -27,6 +27,7 @@ public class connectWIthFriend : MonoBehaviour
     private float destHeight;
 
     private IEnumerator coroutine;
+    private bool CR_running = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,11 +42,16 @@ public class connectWIthFriend : MonoBehaviour
         distance = Vector3.Distance(origin.position, dest.position);
 
         Color currentColor = normalColor;
+
         if (distance > warningDistance)
         {
             currentColor = warningColor;
             coroutine = WaitThenStopGame(stopTime);
             StartCoroutine(coroutine);
+        } else if (CR_running && distance <= warningDistance) {
+            Debug.Log("??");
+            StopCoroutine(coroutine);
+            CR_running = false;
         }
 
         lineRenderer.startColor = currentColor;
@@ -56,7 +62,13 @@ public class connectWIthFriend : MonoBehaviour
 
     private IEnumerator WaitThenStopGame(float waitTime)
     {
+        CR_running = true;
         yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene("BadEnd");
+        if (CR_running)
+        {
+            SceneManager.LoadScene("BadEnd");
+            CR_running = false;
+        }
+        CR_running = false;
     }
 }
