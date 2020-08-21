@@ -47,7 +47,7 @@ public class ItemCollectionManager : MonoBehaviour
             case "Torch":
                 PhysicalTorch.SetActive(true);
                 this.torch = true;
-                TopScreenNotice.text = "You picked up Torch";
+                TopScreenNotice.text = "You picked up Torch, now you could press Q to use it";
                 break;
             case "Photo":
                 this.photo = true;
