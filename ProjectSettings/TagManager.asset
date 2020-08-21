@@ -10,6 +10,7 @@ TagManager:
   - MiniMap tag
   - MiniMapObj
   - Torch
+  - Photo
   layers:
   - Default
   - TransparentFX
