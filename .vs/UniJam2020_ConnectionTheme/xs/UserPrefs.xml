@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AudioManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayAudioWhenCollide.cs">
     <Files>
       <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="50" Column="39" />
       <File FileName="Assets/Scripts/CharacterManager/CharacterMovement.cs" />
@@ -12,9 +12,10 @@
       <File FileName="Assets/Scripts/ItemManager/PressFToInteract.cs" />
       <File FileName="Assets/Scripts/PlayerCamManager/CameraInitial.cs" />
       <File FileName="Assets/Scripts/SceneManager/buttonController.cs" />
-      <File FileName="Assets/Scripts/CharacterManager/PressF1OpenGuide.cs" Line="16" Column="18" />
+      <File FileName="Assets/Scripts/CharacterManager/PressF1OpenGuide.cs" />
       <File FileName="Assets/Scripts/MiniMapScripts/MtoOpenMap.cs" />
-      <File FileName="Assets/Scripts/AudioManager.cs" Line="21" Column="67" />
+      <File FileName="Assets/Scripts/AudioManager.cs" />
+      <File FileName="Assets/Scripts/PlayAudioWhenCollide.cs" Line="7" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
