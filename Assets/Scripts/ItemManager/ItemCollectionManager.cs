@@ -10,15 +10,20 @@ public class ItemCollectionManager : MonoBehaviour
     // the number of quest items player got
     public int pizza;
     public bool axe;
+    public bool torch;
 
     public Text ItemCollection;
     public Text MidScreenNotice;
     public Text TopScreenNotice;
 
+    public GameObject Axe;
+    public GameObject Torch;
+
     private void Start()
     {
         this.pizza = 0;
         this.axe = false;
+        this.torch = false;
     }
 
     public void pickUp(string item)
@@ -32,6 +37,10 @@ public class ItemCollectionManager : MonoBehaviour
             case "Axe":
                 this.axe = true;
                 TopScreenNotice.text = "You picked up Axe";
+                break;
+            case "Torch":
+                this.torch = true;
+                TopScreenNotice.text = "You pakced up Torch";
                 break;
         }
         
@@ -47,6 +56,12 @@ public class ItemCollectionManager : MonoBehaviour
         if (this.axe)
         {
             output += "Axe" + "\n";
+            Axe.SetActive(true);
+        }
+        if (this.torch)
+        {
+            output += "Torch" + "\n";
+            Torch.SetActive(true);
         }
         ItemCollection.text = output;
     }
