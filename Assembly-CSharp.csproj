@@ -93,6 +93,7 @@
      <Compile Include="Assets\Scripts\CharacterManager\healthBar.cs" />
      <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager\PressFToInteract.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\UseTorch.cs" />
      <Compile Include="Assets\Scripts\ItemManager\itemMotion.cs" />
      <Compile Include="Assets\Scripts\MiniMapScripts\DisableMiniMapShadow.cs" />
      <Compile Include="Assets\Scripts\MiniMapScripts\MtoOpenMap.cs" />

@@ -6,12 +6,12 @@ using UnityEngine;
 //Rotate items when it's on the ground, jump when the player is near enough
 public class itemMotion : MonoBehaviour
 {
-    public float spinSpeed=5;
+    private float spinSpeed=50;
     public GameObject player;
-    public float jumpRadius = 6;
+    private float jumpRadius = 3;
 
-    public float yLimit = 0.3f;
-    public float moveSpeed = 0.2f;
+    private float yLimit = 0.25f;
+    private float moveSpeed = 0.25f;
 
     private bool back =false;
     private bool startJump = false;
