@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class buttonController : MonoBehaviour
 {
-	public void replay() {
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+    public void replay() {
 		SceneManager.LoadScene("MainMaze");
 	}
 }
