@@ -18,12 +18,15 @@ public class ItemCollectionManager : MonoBehaviour
 
     public GameObject Axe;
     public GameObject Torch;
+    private GameObject PhysicalTorch;
 
     private void Start()
     {
         this.pizza = 0;
         this.axe = false;
         this.torch = false;
+        PhysicalTorch = GameObject.Find("TorchModel");
+        PhysicalTorch.SetActive(false);
     }
 
     public void pickUp(string item)
@@ -39,6 +42,7 @@ public class ItemCollectionManager : MonoBehaviour
                 TopScreenNotice.text = "You picked up Axe";
                 break;
             case "Torch":
+                PhysicalTorch.SetActive(true);
                 this.torch = true;
                 TopScreenNotice.text = "You pakced up Torch";
                 break;
@@ -60,6 +64,7 @@ public class ItemCollectionManager : MonoBehaviour
         }
         if (this.torch)
         {
+
             output += "Torch" + "\n";
             Torch.SetActive(true);
         }
