@@ -106,6 +106,7 @@
      <Compile Include="Assets\Scripts\TextManager\TextFadeAway.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Bed &amp; Bath Furniture Pack\Documentation.txt" />
      <None Include="Assets\FogOfWar\Core\Legacy\FogOfWarLegacy.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\FogOfWar\Core\FogOfWarUtils.cginc" />
