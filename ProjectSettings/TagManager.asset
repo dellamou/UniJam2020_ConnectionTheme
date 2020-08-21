@@ -11,6 +11,9 @@ TagManager:
   - MiniMapObj
   - Torch
   - Photo
+  - EndTrigger
+  - EndPlayer
+  - EndCamera
   layers:
   - Default
   - TransparentFX

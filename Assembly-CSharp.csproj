@@ -85,7 +85,8 @@
      <Compile Include="Assets\FogOfWar\Samples\PPSv2\FogOfWarTestPPSv2.cs" />
      <Compile Include="Assets\HandTorch\Scripts\RotateObject.cs" />
      <Compile Include="Assets\HandTorch\Scripts\ToggleLight.cs" />
-     <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\AudioManagement\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\AudioManagement\PlayAudioWhenCollide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressF1OpenGuide.cs" />
@@ -93,6 +94,7 @@
      <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\energyBar.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\healthBar.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\selfMoveTowards.cs" />
      <Compile Include="Assets\Scripts\ItemManager\ItemCollectionManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager\PressFToInteract.cs" />
      <Compile Include="Assets\Scripts\ItemManager\UseTorch.cs" />
@@ -100,8 +102,8 @@
      <Compile Include="Assets\Scripts\MiniMapScripts\DisableMiniMapShadow.cs" />
      <Compile Include="Assets\Scripts\MiniMapScripts\MtoOpenMap.cs" />
      <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
-     <Compile Include="Assets\Scripts\PlayAudioWhenCollide.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\CameraInitial.cs" />
+     <Compile Include="Assets\Scripts\PlayerCamManager\ChangeCameraWhenEnterTheRoom.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
