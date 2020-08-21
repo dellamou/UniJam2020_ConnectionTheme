@@ -87,6 +87,7 @@
      <Compile Include="Assets\HandTorch\Scripts\ToggleLight.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\PressF1OpenGuide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\energyBar.cs" />
