@@ -33,8 +33,7 @@ public class MoveCam : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        playerCamera=GameObject.Find("Camera").GetComponent<Camera>();;
-
+        playerCamera=GameObject.Find("Camera").GetComponent<Camera>();
     }
 
     void Update()
