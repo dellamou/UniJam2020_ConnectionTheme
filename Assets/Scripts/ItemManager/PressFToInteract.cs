@@ -47,7 +47,7 @@ public class PressFToInteract : MonoBehaviour
                     }
 
                 }
-            } 
+            }
             else
             {
                 if (Input.GetKey(KeyCode.F))

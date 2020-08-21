@@ -1,15 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemManager/PressFToInteract.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManager/buttonController.cs">
     <Files>
       <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="50" Column="39" />
       <File FileName="Assets/Scripts/CharacterManager/CharacterMovement.cs" />
       <File FileName="Assets/Scripts/ItemManager/ItemCollectionManager.cs" />
       <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs" />
       <File FileName="Assets/Scripts/TextManager/TextFadeAway.cs" />
-      <File FileName="Assets/Scripts/PlayerCamManager/MoveCam.cs" />
+      <File FileName="Assets/Scripts/PlayerCamManager/MoveCam.cs" Line="34" Column="50" />
       <File FileName="Assets/Scripts/CharacterManager/energyBar.cs" />
       <File FileName="Assets/Scripts/CharacterManager/healthBar.cs" />
-      <File FileName="Assets/Scripts/ItemManager/PressFToInteract.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItemManager/PressFToInteract.cs" />
+      <File FileName="Assets/Scripts/PlayerCamManager/CameraInitial.cs" />
+      <File FileName="Assets/Scripts/SceneManager/buttonController.cs" Line="13" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
