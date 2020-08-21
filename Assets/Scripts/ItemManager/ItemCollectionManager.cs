@@ -22,6 +22,8 @@ public class ItemCollectionManager : MonoBehaviour
     private GameObject PhysicalTorch;
     public GameObject Photo;
 
+    public float energyPerPizza = 20f;
+
     private void Start()
     {
         this.pizza = 0;
@@ -39,6 +41,8 @@ public class ItemCollectionManager : MonoBehaviour
             case "Pizza":
                 this.pizza++;
                 TopScreenNotice.text = "You picked up Pizza";
+                this.GetComponent<MoveCam>().energy += energyPerPizza;
+                this.GetComponent<MoveCam>().fullEnergy += energyPerPizza;
                 break;
             case "Axe":
                 this.axe = true;

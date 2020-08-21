@@ -15,6 +15,7 @@ public class energyBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        this.GetComponent<Slider>().maxValue = target.fullEnergy;
         this.GetComponent<Slider>().value = target.energy;
     }
 }

@@ -15,6 +15,7 @@ public class healthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        this.GetComponent<Slider>().maxValue = target.fullHealth;
         this.GetComponent<Slider>().value = target.health;
     }
 }
