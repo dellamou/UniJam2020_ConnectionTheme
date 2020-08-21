@@ -11,6 +11,7 @@ public class ItemCollectionManager : MonoBehaviour
     public int pizza;
     public bool axe;
     public bool torch;
+    public bool photo;
 
     public Text ItemCollection;
     public Text MidScreenNotice;
@@ -19,12 +20,14 @@ public class ItemCollectionManager : MonoBehaviour
     public GameObject Axe;
     public GameObject Torch;
     private GameObject PhysicalTorch;
+    public GameObject Photo;
 
     private void Start()
     {
         this.pizza = 0;
         this.axe = false;
         this.torch = false;
+        this.photo = false;
         PhysicalTorch = GameObject.Find("TorchModel");
         PhysicalTorch.SetActive(false);
     }
@@ -44,7 +47,11 @@ public class ItemCollectionManager : MonoBehaviour
             case "Torch":
                 PhysicalTorch.SetActive(true);
                 this.torch = true;
-                TopScreenNotice.text = "You pakced up Torch";
+                TopScreenNotice.text = "You picked up Torch";
+                break;
+            case "Photo":
+                this.photo = true;
+                TopScreenNotice.text = "You picked up Photo";
                 break;
         }
         
@@ -67,6 +74,10 @@ public class ItemCollectionManager : MonoBehaviour
 
             output += "Torch" + "\n";
             Torch.SetActive(true);
+        }
+        if (this.photo)  
+        {
+            Photo.SetActive(true);;
         }
         ItemCollection.text = output;
     }
