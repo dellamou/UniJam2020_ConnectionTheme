@@ -15,11 +15,15 @@ public class PressFCallFriend : MonoBehaviour
     public float interactDistance = 1f;
     public Text MidScreenNotice;
     public Text TopScreenNotice;
+
+    private GameObject skype;
     // Start is called before the first frame update
     void Start()
     {
         checkPoint.GetComponent<PressFToInteract>().enabled = true;
         dest.GetComponent<PressFToInteract>().enabled = false;
+        skype = GameObject.Find("SkypeScreen");
+        skype.SetActive(false);
     }
 
     // Update is called once per frame
@@ -43,6 +47,7 @@ public class PressFCallFriend : MonoBehaviour
                     TopScreenNotice.text = "Maybe I should give him a Call via COMPUTER on the desk.";
                     checkPoint.GetComponent<PressFToInteract>().enabled = false;
                     dest.GetComponent<PressFToInteract>().enabled = true;
+                    skype.SetActive(true);
                 }
             }
         }

@@ -69,7 +69,7 @@ public class PressFToInteract : MonoBehaviour
                 }
             }
 
-        } else if (distance - interactRegion < 0.01f) // clear the notice after player leave the area
+        } else if (distance - interactRegion < 0.1f) // clear the notice after player leave the area
         {
             MidScreenNotice.text = "";
             TopScreenNotice.text = "";
