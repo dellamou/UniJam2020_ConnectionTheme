@@ -11,7 +11,7 @@ public class GoodEndingInitial : MonoBehaviour
     private float InitialHeight = -0.8f; 
     private float InitialZ = 0.8f; 
     private float accFactor = 2;
-    private float raiseSpeed = 0.1f;
+    private float raiseSpeed = 0.15f;
     private GameObject player;
     private MoveCam CamMoveScript;
     private Camera MainCam;
@@ -40,7 +40,7 @@ public class GoodEndingInitial : MonoBehaviour
         }
         //if the camera falls and reached the player, starting rotation
         if (this.transform.localPosition.y>=finalPos.y){
-            if (this.transform.localRotation.x >= finalPos.x+0.2){
+            if (this.transform.localRotation.x >= finalPos.x){
                 this.transform.localRotation *= Quaternion.AngleAxis(Time.deltaTime * 30, new Vector3 (-10.0f,0.0f,0.0f));
             }
             //finished camera movement, enable control and disable this script
