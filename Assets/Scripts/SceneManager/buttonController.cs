@@ -13,4 +13,15 @@ public class buttonController : MonoBehaviour
     public void replay() {
 		SceneManager.LoadScene("MainMaze");
 	}
+    public void play() {
+        SceneManager.LoadScene("MainMaze");
+    }
+    public void achievements()
+    {
+        SceneManager.LoadScene("Achievements");
+    }
+    public void homePage()
+    {
+        SceneManager.LoadScene("HomePage");
+    }
 }
