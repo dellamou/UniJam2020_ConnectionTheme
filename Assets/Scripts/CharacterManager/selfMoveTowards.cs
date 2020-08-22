@@ -26,6 +26,7 @@ public class selfMoveTowards : MonoBehaviour
     private IEnumerator WaitSwitchScene(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
+        this.GetComponent<recordSaver>().SaveJson("good");
         SceneManager.LoadScene("GoodEnd");
     }
 }
