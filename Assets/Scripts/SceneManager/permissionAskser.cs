@@ -19,11 +19,12 @@ public class Record
 public class permissionAskser : MonoBehaviour
 {
     private Record record;
-    private string path = "record.json";
+    private string path = "/record.json";
     // Start is called before the first frame update
     void Start()
     {
         LoadJson(path); ;
+        path = Application.dataPath + path;
     }
 
     public void LoadJson(string path)

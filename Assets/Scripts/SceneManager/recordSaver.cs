@@ -22,11 +22,12 @@ public class recordSaver : MonoBehaviour
 
     public ItemCollectionManager items;
     private Record record;
-    private string path = "record.json";
+    private string path = "/record.json";
 
     // Start is called before the first frame update
     void Start()
     {
+        path = Application.dataPath + path;
         items = GameObject.Find("Player").GetComponent<ItemCollectionManager>();
         LoadJson(path);
     }

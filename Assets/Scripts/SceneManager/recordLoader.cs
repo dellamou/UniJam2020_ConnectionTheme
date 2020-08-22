@@ -21,7 +21,7 @@ public class recordLoader : MonoBehaviour
         public bool te;
     }
 
-    private string path = "record.json";
+    private string path = "/record.json";
     public Record record = new Record();
     public Button badEnd;
     public Button GoodEnd;
@@ -31,6 +31,7 @@ public class recordLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        path = Application.dataPath + path;
         LoadJson(this.path);
         badEnd = GameObject.Find("badEnd").GetComponent<Button>();
         GoodEnd = GameObject.Find("GoodEnd").GetComponent<Button>();
