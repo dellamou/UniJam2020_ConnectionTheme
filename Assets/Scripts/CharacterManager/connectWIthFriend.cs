@@ -79,6 +79,7 @@ public class connectWIthFriend : MonoBehaviour
         health -= healthTakePerMS;
         if (health <= 0)
         {
+            this.GetComponent<recordSaver>().SaveJson();
             SceneManager.LoadScene("BadEnd");
         }
     }
