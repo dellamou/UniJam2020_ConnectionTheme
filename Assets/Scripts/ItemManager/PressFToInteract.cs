@@ -17,10 +17,13 @@ public class PressFToInteract : MonoBehaviour
     public Text MidScreenNotice;
     public Text TopScreenNotice;
 
+    private GameObject soundEffect;
+
     void Start()
     {
         thisPos = this.transform.position;
         player = GameObject.Find("Player");
+        soundEffect = GameObject.Find("AudioManager");
     }
 
     void Update()
@@ -38,6 +41,9 @@ public class PressFToInteract : MonoBehaviour
                     if (player.GetComponent<ItemCollectionManager>().axe)
                     {
                         Destroy(this.gameObject);
+                        // play audio when interact (destroying doors..)
+                        soundEffect.GetComponent<AudioSource>().clip = soundEffect.GetComponent<AudioManager>().audioClips[0];
+                        soundEffect.GetComponent<AudioSource>().Play();
                         TopScreenNotice.text = "Now I need to keep going...";
                         MidScreenNotice.text = "";
                     }
@@ -53,6 +59,9 @@ public class PressFToInteract : MonoBehaviour
                 if (Input.GetKey(KeyCode.F))
                 {
                     player.GetComponent<ItemCollectionManager>().pickUp(this.tag);
+                    // play audio when pickup
+                    soundEffect.GetComponent<AudioSource>().clip = soundEffect.GetComponent<AudioManager>().audioClips[0];
+                    soundEffect.GetComponent<AudioSource>().Play();
                     Destroy(this.gameObject);
                     MidScreenNotice.text = "";
                 }
