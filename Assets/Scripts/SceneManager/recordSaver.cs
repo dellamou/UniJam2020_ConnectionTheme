@@ -47,7 +47,7 @@ public class recordSaver : MonoBehaviour
         }
     }
 
-    public void SaveJson()
+    public void SaveJson(string ending)
     {
         record.pizza += items.pizza;
         if (items.axe)
@@ -61,6 +61,18 @@ public class recordSaver : MonoBehaviour
         if (items.photo)
         {
             record.photo++;
+        }
+        switch (ending)
+        {
+            case "bad":
+                record.be = true;
+                break;
+            case "good":
+                record.ge = true;
+                break;
+            case "true":
+                record.te = true;
+                break;
         }
         using (StreamWriter w = new StreamWriter(path))
         {
