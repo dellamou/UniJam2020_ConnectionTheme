@@ -1,7 +1,7 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManager/buttonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManager/recordLoader.cs">
     <Files>
-      <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="50" Column="39" />
+      <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="82" Column="13" />
       <File FileName="Assets/Scripts/CharacterManager/CharacterMovement.cs" />
       <File FileName="Assets/Scripts/ItemManager/ItemCollectionManager.cs" />
       <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs" />
@@ -11,11 +11,12 @@
       <File FileName="Assets/Scripts/CharacterManager/healthBar.cs" />
       <File FileName="Assets/Scripts/ItemManager/PressFToInteract.cs" />
       <File FileName="Assets/Scripts/PlayerCamManager/CameraInitial.cs" />
-      <File FileName="Assets/Scripts/SceneManager/buttonController.cs" Line="21" Column="45" />
-      <File FileName="Assets/Scripts/CharacterManager/PressF1OpenGuide.cs" />
+      <File FileName="Assets/Scripts/SceneManager/buttonController.cs" />
       <File FileName="Assets/Scripts/MiniMapScripts/MtoOpenMap.cs" />
-      <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" />
+      <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" Line="27" Column="6" />
       <File FileName="Assets/Scripts/AudioManagement/AudioManager.cs" />
+      <File FileName="Assets/Scripts/SceneManager/recordSaver.cs" Line="34" Column="1" />
+      <File FileName="Assets/Scripts/SceneManager/recordLoader.cs" Line="69" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

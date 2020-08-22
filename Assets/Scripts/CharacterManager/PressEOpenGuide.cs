@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PressF1OpenGuide : MonoBehaviour
+public class PressEOpenGuide : MonoBehaviour
 {
     public GameObject guide;
 
