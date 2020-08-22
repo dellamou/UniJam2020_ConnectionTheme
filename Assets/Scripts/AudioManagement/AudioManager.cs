@@ -16,6 +16,13 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            this.GetComponent<AudioSource>().clip = audioClips[0];
+            this.GetComponent<AudioSource>().Play();
+        }
+        
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (torchOn){
@@ -32,9 +39,10 @@ public class AudioManager : MonoBehaviour
         else {
 
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        
+        if (Input.GetKeyDown(KeyCode.M))
         {
-            this.GetComponent<AudioSource>().clip = audioClips[0];
+            this.GetComponent<AudioSource>().clip = audioClips[3];
             this.GetComponent<AudioSource>().Play();
         }
     }
