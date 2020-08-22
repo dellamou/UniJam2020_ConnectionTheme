@@ -86,6 +86,8 @@
      <Compile Include="Assets\Scripts\ParticleManager\ParticleDestroyWhenFinishes.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\CameraInitial.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\ChangeCameraWhenEnterTheRoom.cs" />
+     <Compile Include="Assets\Scripts\PlayerCamManager\ChangeFoV.cs" />
+     <Compile Include="Assets\Scripts\PlayerCamManager\GoodEndingInitial.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />

@@ -5540,7 +5540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983846018}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.86, y: 0.8, z: 2.61}
+  m_LocalPosition: {x: -5.886, y: 0.8, z: 2.61}
   m_LocalScale: {x: 0.6, y: 0.8, z: 0.6}
   m_Children:
   - {fileID: 2087051629}
@@ -5763,6 +5763,7 @@ GameObject:
   - component: {fileID: 2087051627}
   - component: {fileID: 2087051626}
   - component: {fileID: 2087051625}
+  - component: {fileID: 2087051630}
   - component: {fileID: 2087051624}
   m_Layer: 0
   m_Name: MainCamera
@@ -5796,7 +5797,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -5821,14 +5822,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087051622}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52b2faf6c232f4b6e889848e8a7730b7, type: 3}
+  m_Script: {fileID: 11500000, guid: d5fc2c52a8eba41cc9415f4e6c63152c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialHeight: 100
-  accFactor: 30
-  dropSpeed: 2
+  t: 0.01
+  maxFOV: 70
 --- !u!114 &2087051625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5891,11 +5891,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087051622}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 1, z: 0.03}
+  m_LocalRotation: {x: 0.1478409, y: -0, z: -0, w: 0.9890112}
+  m_LocalPosition: {x: 0.010000058, y: 1, z: 0.08999984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1497246700}
   m_Father: {fileID: 1983846027}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.004002, y: 0, z: 0}
+--- !u!114 &2087051630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087051622}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14165d830bafa44a4bea8afc43994e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialHeight: -1
+  raiseSpeed: 0.5
