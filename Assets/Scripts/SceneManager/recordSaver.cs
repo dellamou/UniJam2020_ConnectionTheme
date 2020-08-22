@@ -11,13 +11,13 @@ public class recordSaver : MonoBehaviour
 {
     public class Record
     {
-        public int pizza;
-        public int axe;
-        public int torch;
-        public int photo;
-        public bool be;
-        public bool ge;
-        public bool te;
+        public int pizza = 0;
+        public int axe = 0;
+        public int torch = 0;
+        public int photo = 0;
+        public bool be = false;
+        public bool ge = false;
+        public bool te = false;
     }
 
     public ItemCollectionManager items;
@@ -31,19 +31,21 @@ public class recordSaver : MonoBehaviour
         LoadJson(path);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadJson(string path)
     {
-        using (StreamReader r = new StreamReader(path))
+        if (File.Exists(path))
         {
-            string json = r.ReadToEnd();
-            Debug.Log(json);
-            this.record = JsonConvert.DeserializeObject<Record>(json);
+            using (StreamReader r = new StreamReader(path))
+            {
+                string json = r.ReadToEnd();
+                Debug.Log(json);
+                this.record = JsonConvert.DeserializeObject<Record>(json);
+            }
+        }
+        else
+        {
+            this.record = new Record();
+
         }
     }
 

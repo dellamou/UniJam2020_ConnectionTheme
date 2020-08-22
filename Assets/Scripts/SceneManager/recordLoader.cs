@@ -52,11 +52,19 @@ public class recordLoader : MonoBehaviour
 
     public void LoadJson(string path)
     {
-        using (StreamReader r = new StreamReader(path))
+        if (File.Exists(path))
         {
-            string json = r.ReadToEnd();
-            Debug.Log(json);
-            this.record = JsonConvert.DeserializeObject<Record>(json);
+            using (StreamReader r = new StreamReader(path))
+            {
+                string json = r.ReadToEnd();
+                Debug.Log(json);
+                this.record = JsonConvert.DeserializeObject<Record>(json);
+            }
+        }
+        else
+        {
+            this.record = new Record();
+
         }
     }
 }
