@@ -2176,7 +2176,7 @@ GameObject:
   - component: {fileID: 705835043}
   - component: {fileID: 705835042}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: SkypeScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4073,6 +4073,7 @@ GameObject:
   - component: {fileID: 1277436445}
   - component: {fileID: 1277436444}
   - component: {fileID: 1277436443}
+  - component: {fileID: 1277436446}
   m_Layer: 0
   m_Name: Computer
   m_TagString: Untagged
@@ -4159,6 +4160,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277436441}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1277436446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277436441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b84cc63645945bebe81c514495d635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRegion: 1
+  MidScreenNotice: {fileID: 501452199}
+  TopScreenNotice: {fileID: 1880288636}
 --- !u!4 &1278735868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4754073856193944, guid: 3865dab15f85624439f27d11cc132971,
@@ -5580,10 +5596,7 @@ GameObject:
   - component: {fileID: 1983846026}
   - component: {fileID: 1983846025}
   - component: {fileID: 1983846024}
-  - component: {fileID: 1983846023}
   - component: {fileID: 1983846022}
-  - component: {fileID: 1983846021}
-  - component: {fileID: 1983846020}
   - component: {fileID: 1983846019}
   - component: {fileID: 1983846028}
   m_Layer: 0
@@ -5632,69 +5645,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1983846020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983846018}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b130f358dcb26548b2ff0923d496dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 0
-  brightness: 1
-  shapeType: 0
-  absoluteOffset: 0
-  offset: {x: 0, y: 0}
-  boxSize: {x: 5, y: 5}
-  circleRadius: 3
-  innerRadius: 0.538
-  angle: 180
-  texture: {fileID: 0}
-  rotateToForward: 0
-  lineOfSightMask:
-    serializedVersion: 2
-    m_Bits: 0
-  lineOfSightRaycastCount: 100
-  lineOfSightPenetration: 0
-  multithreading: 0
-  cellBased: 0
-  snapToPixelCenter: 0
---- !u!114 &1983846021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983846018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fec0d0c4161ac44b701192e743dde2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 0
-  mapResolution: {x: 128, y: 128}
-  mapSize: 128
-  mapOffset: {x: 0, y: 0}
-  plane: 2
-  physics: 2
-  pointFiltering: 0
-  blurAmount: 0
-  blurIterations: 0
-  blurType: 0
-  updateUnits: 1
-  updateAutomatically: 1
-  outputToTexture: 1
-  partialFogAmount: 0.5
-  fadeInDuration: 0.1
-  fadeOutDuration: 0.1
-  renderType: 0
-  multithreaded: 0
-  threads: 2
-  maxMillisecondsPerFrame: 5
 --- !u!111 &1983846022
 Animation:
   m_ObjectHideFlags: 0
@@ -5710,29 +5660,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &1983846023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983846018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bee83c1246934035979e5f4eea252a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizza: 0
-  axe: 0
-  torch: 0
-  photo: 0
-  ItemCollection: {fileID: 0}
-  MidScreenNotice: {fileID: 0}
-  TopScreenNotice: {fileID: 0}
-  Axe: {fileID: 0}
-  Torch: {fileID: 0}
-  Photo: {fileID: 0}
-  energyPerPizza: 20
 --- !u!143 &1983846024
 CharacterController:
   m_ObjectHideFlags: 0
