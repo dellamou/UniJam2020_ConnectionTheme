@@ -637,7 +637,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Remember you are also important to your friend!
+  m_Text: You are also important to your friend!
 --- !u!222 &1049300566
 CanvasRenderer:
   m_ObjectHideFlags: 0

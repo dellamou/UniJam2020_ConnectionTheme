@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\CharacterManager\FriendMove.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressEOpenGuide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressFCallFriend.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\PressFToTalk.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\connectWIthFriend.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\energyBar.cs" />
