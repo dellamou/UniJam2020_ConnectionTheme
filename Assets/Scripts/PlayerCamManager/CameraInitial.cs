@@ -38,7 +38,7 @@ public class CameraInitial : MonoBehaviour
             }
             //finished camera movement, enable control and disable this script
             else{
-                player.GetComponent<PressF1OpenGuide>().guide.SetActive(true);
+                player.GetComponent<PressEOpenGuide>().guide.SetActive(true);
                 this.transform.localPosition = finalPos;
                 CamMoveScript.enabled = true;
                 this.enabled = false;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] audioClips;
-
+    private bool torchOn = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +16,21 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            this.GetComponent<AudioSource>().clip = audioClips[0];
-            this.GetComponent<AudioSource>().Play();
+            if (torchOn){
+                this.torchOn = !this.torchOn;
+                this.GetComponent<AudioSource>().clip = audioClips[1];
+                this.GetComponent<AudioSource>().Play();
+            }
+            else {
+                this.torchOn = !this.torchOn;
+                this.GetComponent<AudioSource>().clip = audioClips[2];
+                this.GetComponent<AudioSource>().Play();
+            }
+        }
+        else {
+
         }
         if (Input.GetKeyDown(KeyCode.E))
         {

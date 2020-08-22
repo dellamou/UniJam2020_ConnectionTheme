@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Achievements.unity
     guid: 9cd037735ffea40beb358484bc195f6f
+  - enabled: 1
+    path: Assets/Scenes/GoodEndDisplay.unity
+    guid: 36c2452c4fe132041862c5736d42a4c9
   m_configObjects: {}
