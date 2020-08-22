@@ -1332,6 +1332,7 @@ GameObject:
   - component: {fileID: 501452198}
   - component: {fileID: 501452200}
   - component: {fileID: 501452199}
+  - component: {fileID: 501452201}
   m_Layer: 5
   m_Name: MidScreenNotice
   m_TagString: Untagged
@@ -1399,6 +1400,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501452197}
   m_CullTransparentMesh: 0
+--- !u!114 &501452201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501452197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &510002636
 GameObject:
   m_ObjectHideFlags: 0
@@ -5467,6 +5483,7 @@ GameObject:
   - component: {fileID: 1880288637}
   - component: {fileID: 1880288636}
   - component: {fileID: 1880288635}
+  - component: {fileID: 1880288638}
   m_Layer: 5
   m_Name: TopScreenNotice
   m_TagString: Untagged
@@ -5547,6 +5564,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880288633}
   m_CullTransparentMesh: 0
+--- !u!114 &1880288638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880288633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
 --- !u!4 &1919553417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e071e4532faa88e47852d3945ee959e6,

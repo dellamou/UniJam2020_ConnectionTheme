@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterManager/PressFCallFriend.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/TextOutline.shader">
     <Files>
       <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="82" Column="13" />
       <File FileName="Assets/Scripts/CharacterManager/CharacterMovement.cs" />
@@ -17,7 +17,8 @@
       <File FileName="Assets/Scripts/AudioManagement/AudioManager.cs" />
       <File FileName="Assets/Scripts/SceneManager/recordSaver.cs" />
       <File FileName="Assets/Scripts/SceneManager/recordLoader.cs" Line="42" Column="18" />
-      <File FileName="Assets/Scripts/CharacterManager/PressFCallFriend.cs" Line="27" Column="9" />
+      <File FileName="Assets/Scripts/CharacterManager/PressFCallFriend.cs" Line="26" Column="32" />
+      <File FileName="Assets/Shaders/TextOutline.shader" Line="168" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
