@@ -75,6 +75,8 @@ public class recordSaver : MonoBehaviour
             case "true":
                 record.te = true;
                 break;
+            case "":
+                break;
         }
         using (StreamWriter w = new StreamWriter(path))
         {

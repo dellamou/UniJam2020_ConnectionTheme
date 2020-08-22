@@ -113,6 +113,7 @@
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
      <Compile Include="Assets\Scripts\SceneManager\mouseHangOverSound.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\permissionAskser.cs" />
      <Compile Include="Assets\Scripts\SceneManager\recordLoader.cs" />
      <Compile Include="Assets\Scripts\SceneManager\recordSaver.cs" />
      <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />
