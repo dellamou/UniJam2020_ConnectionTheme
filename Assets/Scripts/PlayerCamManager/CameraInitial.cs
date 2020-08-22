@@ -12,6 +12,7 @@ public class CameraInitial : MonoBehaviour
     public float accFactor = 15;
     public float dropSpeed = 3;
     private GameObject player;
+    private GameObject UIs;
     private MoveCam CamMoveScript;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,8 @@ public class CameraInitial : MonoBehaviour
         CamMoveScript.enabled = false;
         this.transform.LookAt(player.transform);
         this.transform.RotateAround(transform.position, transform.forward, 180f);
+        UIs = GameObject.Find("UIs");
+        UIs.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +44,7 @@ public class CameraInitial : MonoBehaviour
             //finished camera movement, and disable this script
             else{
                 this.transform.localPosition = finalPos;
+                UIs.SetActive(true);
                 this.enabled = false;
             }
         }
