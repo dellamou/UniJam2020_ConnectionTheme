@@ -660,6 +660,8 @@ GameObject:
   m_Component:
   - component: {fileID: 394995007}
   - component: {fileID: 394995008}
+  - component: {fileID: 394995009}
+  - component: {fileID: 394995010}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -742,6 +744,36 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &394995009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394995006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709dbcc22ac1bd84fbc8d324f4b54745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {fileID: 0}
+  dest: {fileID: 0}
+  interactDistance: 0
+--- !u!114 &394995010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394995006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709dbcc22ac1bd84fbc8d324f4b54745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {fileID: 0}
+  dest: {fileID: 0}
+  interactDistance: 0
 --- !u!4 &413461412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15b4789c0e0bfd3438f1a1d89cde075f,
@@ -5302,6 +5334,7 @@ GameObject:
   - component: {fileID: 1983846021}
   - component: {fileID: 1983846020}
   - component: {fileID: 1983846019}
+  - component: {fileID: 1983846028}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5355,7 +5388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983846018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b130f358dcb26548b2ff0923d496dc6, type: 3}
   m_Name: 
@@ -5514,6 +5547,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -237.064, z: 0}
+--- !u!114 &1983846028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983846018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709dbcc22ac1bd84fbc8d324f4b54745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {fileID: 1983846027}
+  dest: {fileID: 1277436442}
+  interactDistance: 2
 --- !u!1 &1987394361
 GameObject:
   m_ObjectHideFlags: 0
