@@ -5822,12 +5822,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087051622}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5fc2c52a8eba41cc9415f4e6c63152c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0.01
   maxFOV: 70
 --- !u!114 &2087051625
 MonoBehaviour:
@@ -5906,10 +5905,8 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087051622}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14165d830bafa44a4bea8afc43994e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialHeight: -1
-  raiseSpeed: 0.5
