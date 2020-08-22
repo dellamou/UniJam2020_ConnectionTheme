@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class selfMoveTowards : MonoBehaviour
 {
     public float walkingSpeed = 1.5f;
-    private Vector3 target;
+    public Vector3 target;
 
     private GameObject model;
     private GameObject BeautifyUi;
@@ -18,14 +18,27 @@ public class selfMoveTowards : MonoBehaviour
     private IEnumerator coroutine;
     private bool check = false;
 
+    public bool trueEnd;
+
+    private void Start()
+    {
+        if (trueEnd)
+        {
+            this.moveTowards(target);
+        }
+    }
+
     public void moveTowards(Vector3 target)
     {
         this.target = target;
         coroutine = WaitSwitchScene(1.5f);
         StartCoroutine(coroutine);
         model = GameObject.Find("PlayerModel");
-        BeautifyUi = GameObject.Find("BeautifyUi");
-        BeautifyUi.SetActive(false);
+        if (!trueEnd)
+        {
+            BeautifyUi = GameObject.Find("BeautifyUi");
+            BeautifyUi.SetActive(false);
+        }
     }
 
     void Update()
@@ -36,12 +49,35 @@ public class selfMoveTowards : MonoBehaviour
         }
         //move to next scene
         else{
-            TopNotice.text = "Finally I find my friend but Why everything is Up side Down... Am I Dreaming? ";
-            MidNotice.text = "Press Any Key to Continue";
-            if (Input.anyKey){
-                MidNotice.text = "";
-                TopNotice.text = "";
-                SceneManager.LoadScene("GoodEnd");
+            if (!trueEnd)
+            {
+                TopNotice.text = "Finally I find my friend but Why everything is Up side Down... Am I Dreaming? ";
+                MidNotice.text = "Press Any Key to Continue";
+                if (Input.anyKey)
+                {
+                    MidNotice.text = "";
+                    TopNotice.text = "";
+                    // load different scene according to the state
+                    if (GameObject.FindWithTag("Player").GetComponent<ItemCollectionManager>().photo)
+                    {
+                        SceneManager.LoadScene("TrueEnd");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("GoodEnd");
+                    }
+                }
+            }
+            else
+            {
+                TopNotice.text = "Now I realised that when I'm looking for him, he is looking for me too.";
+                MidNotice.text = "Press Any Key to Continue";
+                if (Input.anyKey)
+                {
+                    MidNotice.text = "";
+                    TopNotice.text = "";
+                    SceneManager.LoadScene("TrueEndDisplay");
+                }
             }
         }
     }
@@ -49,7 +85,19 @@ public class selfMoveTowards : MonoBehaviour
     private IEnumerator WaitSwitchScene(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        this.GetComponent<recordSaver>().SaveJson("good");
+        // save the record
+        if (!trueEnd)
+        {
+            // if collected photo, unlock true end
+            if (GameObject.FindWithTag("Player").GetComponent<ItemCollectionManager>().photo)
+            {
+                this.GetComponent<recordSaver>().SaveJson("true");
+            }
+            else
+            {
+                this.GetComponent<recordSaver>().SaveJson("good");
+            }
+        }
         check = true;
         model.GetComponent<Animation>().Play("idle");
     }

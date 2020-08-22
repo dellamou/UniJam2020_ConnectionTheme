@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManager/mouseHangOverSound.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterManager/selfMoveTowards.cs">
     <Files>
       <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="82" Column="13" />
       <File FileName="Assets/Scripts/CharacterManager/CharacterMovement.cs" />
@@ -13,12 +13,13 @@
       <File FileName="Assets/Scripts/PlayerCamManager/CameraInitial.cs" />
       <File FileName="Assets/Scripts/SceneManager/buttonController.cs" />
       <File FileName="Assets/Scripts/MiniMapScripts/MtoOpenMap.cs" />
-      <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" />
-      <File FileName="Assets/Scripts/AudioManagement/AudioManager.cs" Line="31" Column="10" />
+      <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" Line="57" Column="18" />
+      <File FileName="Assets/Scripts/AudioManagement/AudioManager.cs" />
       <File FileName="Assets/Scripts/SceneManager/recordSaver.cs" />
       <File FileName="Assets/Scripts/SceneManager/recordLoader.cs" />
       <File FileName="Assets/Scripts/CharacterManager/PressFCallFriend.cs" />
-      <File FileName="Assets/Scripts/SceneManager/mouseHangOverSound.cs" Line="78" Column="2" />
+      <File FileName="Assets/Scripts/SceneManager/mouseHangOverSound.cs" />
+      <File FileName="Assets/Scripts/PlayerCamManager/ChangeCameraWhenEnterTheRoom.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
