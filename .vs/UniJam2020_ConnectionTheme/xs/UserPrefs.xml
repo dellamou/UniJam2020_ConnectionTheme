@@ -13,10 +13,10 @@
       <File FileName="Assets/Scripts/PlayerCamManager/CameraInitial.cs" />
       <File FileName="Assets/Scripts/SceneManager/buttonController.cs" />
       <File FileName="Assets/Scripts/MiniMapScripts/MtoOpenMap.cs" />
-      <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" Line="27" Column="6" />
+      <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" />
       <File FileName="Assets/Scripts/AudioManagement/AudioManager.cs" />
-      <File FileName="Assets/Scripts/SceneManager/recordSaver.cs" Line="34" Column="1" />
-      <File FileName="Assets/Scripts/SceneManager/recordLoader.cs" Line="69" Column="6" />
+      <File FileName="Assets/Scripts/SceneManager/recordSaver.cs" />
+      <File FileName="Assets/Scripts/SceneManager/recordLoader.cs" Line="42" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

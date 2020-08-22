@@ -60,7 +60,7 @@ public class PressFToInteract : MonoBehaviour
                 {
                     player.GetComponent<ItemCollectionManager>().pickUp(this.tag);
                     // play audio when pickup
-                    soundEffect.GetComponent<AudioSource>().clip = soundEffect.GetComponent<AudioManager>().audioClips[0];
+                    soundEffect.GetComponent<AudioSource>().clip = soundEffect.GetComponent<AudioManager>().audioClips[3];
                     soundEffect.GetComponent<AudioSource>().Play();
                     Destroy(this.gameObject);
                     MidScreenNotice.text = "";
