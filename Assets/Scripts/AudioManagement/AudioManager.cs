@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
             this.GetComponent<AudioSource>().clip = audioClips[0];
             this.GetComponent<AudioSource>().Play();
         }
-        if (Input.GetKeyDown(KeyCode.F1))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             this.GetComponent<AudioSource>().clip = audioClips[0];
             this.GetComponent<AudioSource>().Play();

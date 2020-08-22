@@ -15,7 +15,7 @@ public class PressF1OpenGuide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             guide.SetActive(!guide.activeSelf);
         }
