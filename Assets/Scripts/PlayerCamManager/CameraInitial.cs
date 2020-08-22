@@ -31,16 +31,16 @@ public class CameraInitial : MonoBehaviour
     void Update()
     {
         
-        //if the camera falls and reached the player, starting rotation
-        if (this.transform.localPosition.y<=finalPos.y+1){
-            if (this.transform.localRotation.x >= finalPos.x+0.5){
-                this.transform.localRotation *= Quaternion.AngleAxis(Time.deltaTime * 15*15, new Vector3 (-10.0f,0.0f,0.0f));
+        //if the camera falls and reached the player, starting rotation, enable Fov Change 
+        if (this.transform.localPosition.y<=finalPos.y-1){
+            
+            this.GetComponent<ChangeFoV>().enabled = true;
+            if (this.transform.localRotation.x <= finalPos.x){
+                this.transform.localRotation *= Quaternion.AngleAxis(Time.deltaTime * 15*10, new Vector3 (-10.0f,0.0f,0.0f));
             }
-            //finished camera movement, enable control and disable this script
+            //finished camera movement, and disable this script
             else{
-                player.GetComponent<PressEOpenGuide>().guide.SetActive(true);
                 this.transform.localPosition = finalPos;
-                CamMoveScript.enabled = true;
                 this.enabled = false;
             }
         }
