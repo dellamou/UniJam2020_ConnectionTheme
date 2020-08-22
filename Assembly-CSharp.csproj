@@ -107,6 +107,8 @@
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\recordLoader.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\recordSaver.cs" />
      <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />
      <Compile Include="Assets\Scripts\TextManager\TextFadeAway.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -117,6 +119,7 @@
      <None Include="Assets\FogOfWar\Core\FogOfWarUtils.cginc" />
      <None Include="Assets\HandTorch\Credits.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\JsonDotNet\link.xml" />
      <None Include="Assets\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -330,6 +333,9 @@
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
  <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/dellamou/Desktop/GitHub/UniJam2020_ConnectionTheme/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.3f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

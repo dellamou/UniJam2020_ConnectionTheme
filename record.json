@@ -1,0 +1,9 @@
+{
+	"Pizza" : 10,
+	"Axe" : 0,
+	"Torch" : 0,
+	"Photo" : 0,
+	"be":false,
+	"ge":false,
+	"te":false,
+}

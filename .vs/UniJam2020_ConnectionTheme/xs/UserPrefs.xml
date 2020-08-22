@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManager/buttonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManager/recordLoader.cs">
     <Files>
       <File FileName="Assets/Scripts/CharacterManager/connectWIthFriend.cs" Line="50" Column="39" />
       <File FileName="Assets/Scripts/CharacterManager/CharacterMovement.cs" />
@@ -16,6 +16,8 @@
       <File FileName="Assets/Scripts/MiniMapScripts/MtoOpenMap.cs" />
       <File FileName="Assets/Scripts/CharacterManager/selfMoveTowards.cs" />
       <File FileName="Assets/Scripts/AudioManagement/AudioManager.cs" />
+      <File FileName="Assets/Scripts/SceneManager/recordController.cs" Line="15" Column="26" />
+      <File FileName="Assets/Scripts/SceneManager/recordSaver.cs" Line="16" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
