@@ -833,6 +833,7 @@ GameObject:
   - component: {fileID: 241783889}
   - component: {fileID: 241783888}
   - component: {fileID: 241783887}
+  - component: {fileID: 241783890}
   m_Layer: 5
   m_Name: badEnd
   m_TagString: Untagged
@@ -902,7 +903,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 241783888}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1971939496}
+        m_MethodName: badEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &241783888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +952,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241783885}
   m_CullTransparentMesh: 0
+--- !u!114 &241783890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241783885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720004a5d88344e54a383f448f45ba26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sound: {fileID: 8300000, guid: 79c56c58d0f2d4805aa09ee9aae8fa3f, type: 3}
 --- !u!1 &527017786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1679,7 @@ GameObject:
   - component: {fileID: 946262863}
   - component: {fileID: 946262862}
   - component: {fileID: 946262861}
+  - component: {fileID: 946262864}
   m_Layer: 5
   m_Name: TrueEnd
   m_TagString: Untagged
@@ -1723,7 +1749,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 946262862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1971939496}
+        m_MethodName: trueEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &946262862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1761,6 +1798,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946262859}
   m_CullTransparentMesh: 0
+--- !u!114 &946262864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946262859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720004a5d88344e54a383f448f45ba26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sound: {fileID: 8300000, guid: 79c56c58d0f2d4805aa09ee9aae8fa3f, type: 3}
 --- !u!1 &946501901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,6 +2547,7 @@ GameObject:
   - component: {fileID: 1450765806}
   - component: {fileID: 1450765805}
   - component: {fileID: 1450765804}
+  - component: {fileID: 1450765807}
   m_Layer: 5
   m_Name: GoodEnd
   m_TagString: Untagged
@@ -2566,7 +2617,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1450765805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1971939496}
+        m_MethodName: goodEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1450765805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,6 +2666,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450765802}
   m_CullTransparentMesh: 0
+--- !u!114 &1450765807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450765802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720004a5d88344e54a383f448f45ba26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sound: {fileID: 8300000, guid: 79c56c58d0f2d4805aa09ee9aae8fa3f, type: 3}
 --- !u!1001 &1530043921
 PrefabInstance:
   m_ObjectHideFlags: 0

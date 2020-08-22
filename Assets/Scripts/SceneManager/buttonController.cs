@@ -24,4 +24,16 @@ public class buttonController : MonoBehaviour
     {
         SceneManager.LoadScene("HomePage");
     }
+    public void badEnd()
+    {
+        SceneManager.LoadScene("BadEnd");
+    }
+    public void goodEnd()
+    {
+        SceneManager.LoadScene("GoodEnd");
+    }
+    public void trueEnd()
+    {
+        SceneManager.LoadScene("TrueEnd");
+    }
 }
