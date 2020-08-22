@@ -23,8 +23,10 @@ public class permissionAskser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(Application.dataPath);
+        this.path = Application.dataPath + this.path;
+        Debug.Log(path);
         LoadJson(path); ;
-        path = Application.dataPath + path;
     }
 
     public void LoadJson(string path)
