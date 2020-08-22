@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: dc8a78e280c7a430f8405029b38b0b5f
+=======
+<<<<<<< HEAD:Assets/FogOfWar 2.meta
+guid: 2217ad2f248b94738b0cf0f4a0729306
+=======
+guid: dc8a78e280c7a430f8405029b38b0b5f
+>>>>>>> parent of 3c2a5bb... Merge branch 'master' of https://github.com/dellamou/UniJam2020_ConnectionTheme:Assets/FogOfWar/Samples/Assets/Test2D 2.meta
+>>>>>>> parent of 3c2a5bb... Merge branch 'master' of https://github.com/dellamou/UniJam2020_ConnectionTheme
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
