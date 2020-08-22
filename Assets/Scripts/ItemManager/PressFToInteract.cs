@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PressFToInteract : MonoBehaviour
 {
     private GameObject player;
-    public float interactRegion = 2f;
+    public float interactRegion = 1f;
 
     private Vector3 playerPos;
     private Vector3 thisPos;
@@ -67,7 +67,7 @@ public class PressFToInteract : MonoBehaviour
                 }
             }
 
-        } else if (distance - interactRegion < 0.1f) // clear the notice after player leave the area
+        } else if (distance - interactRegion < 0.01f) // clear the notice after player leave the area
         {
             MidScreenNotice.text = "";
             TopScreenNotice.text = "";
