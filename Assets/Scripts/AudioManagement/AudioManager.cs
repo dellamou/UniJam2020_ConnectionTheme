@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
         else {
 
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.M))
         {
             this.GetComponent<AudioSource>().clip = audioClips[0];
             this.GetComponent<AudioSource>().Play();

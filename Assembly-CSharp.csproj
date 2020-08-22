@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scripts\AudioManagement\PlayAudioWhenCollide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\FriendMove.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressEOpenGuide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressFCallFriend.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\ShiftToRush.cs" />
@@ -110,6 +111,7 @@
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\mouseHangOverSound.cs" />
      <Compile Include="Assets\Scripts\SceneManager\recordLoader.cs" />
      <Compile Include="Assets\Scripts\SceneManager\recordSaver.cs" />
      <Compile Include="Assets\Scripts\SunScript\MoveSun.cs" />

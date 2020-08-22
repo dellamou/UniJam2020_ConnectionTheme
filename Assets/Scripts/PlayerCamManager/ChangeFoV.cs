@@ -24,7 +24,8 @@ public class ChangeFoV : MonoBehaviour
     {
         MainCam.fieldOfView = Mathf.Lerp(MainCam.fieldOfView, maxFOV, t);
 
-        //if finish changing, disable this script and enable movement
+        //if finish changing, disable this script and enable movement.
+        
         if (MainCam.fieldOfView >= maxFOV-quickEnd){
             player.GetComponent<MoveCam>().enabled = true;
             MainCam.fieldOfView = maxFOV;
