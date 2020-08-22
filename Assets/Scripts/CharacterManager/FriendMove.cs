@@ -14,20 +14,11 @@ public class FriendMove : MonoBehaviour
     public void moveTowards(Vector3 target)
     {
         this.target = target;
-        coroutine = WaitSwitchScene(1.5f);
-        StartCoroutine(coroutine);
     }
 
+    // Update is called once per frame
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, target, walkingSpeed * Time.deltaTime);
     }
-
-    private IEnumerator WaitSwitchScene(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-        this.GetComponent<recordSaver>().SaveJson("true");
-        SceneManager.LoadScene("TrueEndDisplay");
-    }
 }
-
