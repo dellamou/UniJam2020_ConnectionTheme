@@ -414,7 +414,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'True End
 
-    Remember you are also important to your friend!'
+    You are also important to your friend!'
 --- !u!222 &707371551
 CanvasRenderer:
   m_ObjectHideFlags: 0
