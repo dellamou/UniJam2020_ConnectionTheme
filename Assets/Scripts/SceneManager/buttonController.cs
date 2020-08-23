@@ -56,4 +56,12 @@ public class buttonController : MonoBehaviour
     {
         SceneManager.LoadScene("TrueEnd");
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("HomePage");
+    }
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 }
