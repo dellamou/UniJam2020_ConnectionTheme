@@ -87,8 +87,11 @@
      <Compile Include="Assets\HandTorch\Scripts\ToggleLight.cs" />
      <Compile Include="Assets\Scripts\AudioManagement\AudioManager.cs" />
      <Compile Include="Assets\Scripts\AudioManagement\PlayAudioWhenCollide.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\ActivateObj.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\EscOpenSetting.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\EyeLidController.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\FriendMove.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressEOpenGuide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressFCallFriend.cs" />
@@ -111,6 +114,8 @@
      <Compile Include="Assets\Scripts\PlayerCamManager\GoodEndingInitial.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\EscOpenSettings.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\LoadSceneAfterTime.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
      <Compile Include="Assets\Scripts\SceneManager\mouseHangOverSound.cs" />
      <Compile Include="Assets\Scripts\SceneManager\permissionAskser.cs" />
