@@ -70,7 +70,7 @@ public class selfMoveTowards : MonoBehaviour
             }
             else
             {
-                TopNotice.text = "Now I realised that when I'm looking for him, he is looking for me too.";
+                TopNotice.text = "Oh! Thank God! I finally find YOU.";
                 MidNotice.text = "Press Any Key to Continue";
                 if (Input.anyKey)
                 {
