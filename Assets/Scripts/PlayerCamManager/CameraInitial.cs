@@ -37,7 +37,7 @@ public class CameraInitial : MonoBehaviour
     {
         
         //if the camera falls and reached the player, starting rotation, enable Fov Change 
-        if (this.transform.localPosition.y<=finalPos.y-1){
+        if (this.transform.localPosition.y<=finalPos.y-0.5f){
             
             this.GetComponent<ChangeFoV>().enabled = true;
             if (this.transform.localRotation.x <= finalPos.x){

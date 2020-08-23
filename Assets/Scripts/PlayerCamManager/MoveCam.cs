@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MoveCam : MonoBehaviour
 {
     public float walkingSpeed = 7.5f;
