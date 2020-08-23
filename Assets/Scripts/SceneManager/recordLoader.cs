@@ -53,20 +53,14 @@ public class recordLoader : MonoBehaviour
 
     public void LoadJson(string path)
     {
-        if (File.Exists(path))
-        {
-            using (StreamReader r = new StreamReader(path))
-            {
-                string json = r.ReadToEnd();
-                Debug.Log(json);
-                this.record = JsonConvert.DeserializeObject<Record>(json);
-            }
-        }
-        else
-        {
-            this.record = new Record();
-
-        }
+        record = new Record();
+        record.pizza = PlayerPrefs.GetInt("pizza");
+        record.axe = PlayerPrefs.GetInt("axe");
+        record.torch = PlayerPrefs.GetInt("torch");
+        record.photo = PlayerPrefs.GetInt("photo");
+        record.be = PlayerPrefs.GetInt("be") == 1 ? true : false;
+        record.ge = PlayerPrefs.GetInt("ge") == 1 ? true : false;
+        record.te = PlayerPrefs.GetInt("te") == 1 ? true : false;
     }
 }
 
