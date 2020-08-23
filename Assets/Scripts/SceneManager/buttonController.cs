@@ -54,7 +54,7 @@ public class buttonController : MonoBehaviour
     }
     public void trueEnd()
     {
-        SceneManager.LoadScene("TrueEnd");
+        SceneManager.LoadScene("TrueEndMiddle");
     }
     public void menu()
     {
