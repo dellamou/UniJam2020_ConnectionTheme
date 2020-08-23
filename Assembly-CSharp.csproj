@@ -86,6 +86,7 @@
      <Compile Include="Assets\Scripts\AudioManagement\AudioManager.cs" />
      <Compile Include="Assets\Scripts\AudioManagement\PlayAudioWhenCollide.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\ActivateObj.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\BlinkForSeconds.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\EscOpenSetting.cs" />

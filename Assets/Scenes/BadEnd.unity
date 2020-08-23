@@ -306,6 +306,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a9934f23d614cffb46bdf747622af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainMenu: {fileID: 0}
+  AchiMenu: {fileID: 0}
+  MainCam: {fileID: 0}
+  AchiCam: {fileID: 0}
+  MainSun: {fileID: 0}
+  AchiSun: {fileID: 0}
 --- !u!4 &183398363
 Transform:
   m_ObjectHideFlags: 0
@@ -1281,7 +1287,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 183398362}
-        m_MethodName: homePage
+        m_MethodName: menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
