@@ -4,8 +4,6 @@ using UnityEngine;
 
 using System.IO;
 using Newtonsoft.Json;
-using System.IO;
-using Newtonsoft.Json;
 
 public class recordSaver : MonoBehaviour
 {
@@ -34,54 +32,51 @@ public class recordSaver : MonoBehaviour
 
     public void LoadJson(string path)
     {
-        if (File.Exists(path))
-        {
-            using (StreamReader r = new StreamReader(path))
-            {
-                string json = r.ReadToEnd();
-                Debug.Log(json);
-                this.record = JsonConvert.DeserializeObject<Record>(json);
-            }
-        }
-        else
-        {
-            this.record = new Record();
-
-        }
+        record = new Record();
+        record.pizza = PlayerPrefs.GetInt("pizza");
+        record.axe = PlayerPrefs.GetInt("axe");
+        record.torch = PlayerPrefs.GetInt("torch");
+        record.photo = PlayerPrefs.GetInt("photo");
+        record.be = PlayerPrefs.GetInt("be")==1 ? true : false; 
+        record.ge = PlayerPrefs.GetInt("ge") == 1 ? true : false;
+        record.te = PlayerPrefs.GetInt("te") == 1 ? true : false;
     }
 
     public void SaveJson(string ending)
     {
-        record.pizza += items.pizza;
+        PlayerPrefs.SetInt("pizza", record.pizza += items.pizza);
+        //record.pizza += items.pizza;
         if (items.axe)
         {
-            record.axe++;
+            PlayerPrefs.SetInt("axe", record.axe += 1);
+            //record.axe++;
         }
         if (items.torch)
         {
-            record.torch++;
+            PlayerPrefs.SetInt("torch", record.torch += 1);
+            //record.torch++;
         }
         if (items.photo)
         {
-            record.photo++;
+            PlayerPrefs.SetInt("photo", record.photo += 1);
+            //record.photo++;
         }
         switch (ending)
         {
             case "bad":
-                record.be = true;
+                PlayerPrefs.SetInt("be", 1);
+                //record.be = true;
                 break;
             case "good":
-                record.ge = true;
+                PlayerPrefs.SetInt("be", 1);
+                //record.ge = true;
                 break;
             case "true":
-                record.te = true;
+                PlayerPrefs.SetInt("be", 1);
+                //record.te = true;
                 break;
             case "":
                 break;
-        }
-        using (StreamWriter w = new StreamWriter(path))
-        {
-            w.WriteLine(JsonConvert.SerializeObject(record));
         }
     }
 }
