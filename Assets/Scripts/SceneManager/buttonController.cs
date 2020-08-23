@@ -6,10 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class buttonController : MonoBehaviour
 {
+    public GameObject MainMenu;
+    public GameObject AchiMenu;
+    public GameObject MainCam;
+    public GameObject AchiCam;
+    public GameObject MainSun;
+    public GameObject AchiSun;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        AchiCam.SetActive(false);
+        AchiMenu.SetActive(false);
+        AchiSun.SetActive(false);
     }
     public void replay() {
 		SceneManager.LoadScene("MainMaze");
@@ -19,11 +28,21 @@ public class buttonController : MonoBehaviour
     }
     public void achievements()
     {
-        SceneManager.LoadScene("Achievements");
+        this.MainMenu.SetActive(false);
+        MainCam.SetActive(false);
+        AchiCam.SetActive(true);
+        AchiSun.SetActive(true);
+        MainSun.SetActive(false);
+        this.AchiMenu.SetActive(true);
     }
     public void homePage()
     {
-        SceneManager.LoadScene("HomePage");
+        this.AchiMenu.SetActive(false);
+        MainCam.SetActive(true);
+        AchiCam.SetActive(false);
+        AchiSun.SetActive(false);
+        MainSun.SetActive(true);
+        this.MainMenu.SetActive(true);
     }
     public void badEnd()
     {
