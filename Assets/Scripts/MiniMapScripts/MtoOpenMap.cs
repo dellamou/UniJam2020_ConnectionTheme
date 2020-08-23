@@ -9,6 +9,7 @@ public class MtoOpenMap : MonoBehaviour
     private Canvas MapCanvas;
     private GameObject DimScreenPlane; 
     private MeshRenderer dimCam;
+    public GameObject MapLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class MtoOpenMap : MonoBehaviour
         MapCanvas.enabled = false;
         dimCam.enabled = false;
         beautifyUI.SetActive(false);
+        MapLight.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class MtoOpenMap : MonoBehaviour
             MapCanvas.enabled = !MapCanvas.enabled;
             dimCam.enabled = !dimCam.enabled;
             beautifyUI.SetActive(!beautifyUI.activeSelf);
+            MapLight.SetActive(!MapLight.activeSelf);
         }
     }
 }
