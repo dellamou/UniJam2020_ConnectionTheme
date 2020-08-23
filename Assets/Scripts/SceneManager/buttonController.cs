@@ -8,6 +8,7 @@ public class buttonController : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject AchiMenu;
+    public GameObject CreMenu;
     public GameObject MainCam;
     public GameObject AchiCam;
     public GameObject MainSun;
@@ -19,6 +20,7 @@ public class buttonController : MonoBehaviour
         AchiCam.SetActive(false);
         AchiMenu.SetActive(false);
         AchiSun.SetActive(false);
+        CreMenu.SetActive(false);
     }
     public void replay() {
 		SceneManager.LoadScene("MainMaze");
@@ -35,6 +37,15 @@ public class buttonController : MonoBehaviour
         MainSun.SetActive(false);
         this.AchiMenu.SetActive(true);
     }
+    public void credit()
+    {
+        this.MainMenu.SetActive(false);
+        MainCam.SetActive(false);
+        AchiCam.SetActive(true);
+        AchiSun.SetActive(true);
+        MainSun.SetActive(false);
+        this.CreMenu.SetActive(true);
+    }
     public void homePage()
     {
         this.AchiMenu.SetActive(false);
@@ -42,6 +53,7 @@ public class buttonController : MonoBehaviour
         AchiCam.SetActive(false);
         AchiSun.SetActive(false);
         MainSun.SetActive(true);
+        CreMenu.SetActive(false);
         this.MainMenu.SetActive(true);
     }
     public void badEnd()
