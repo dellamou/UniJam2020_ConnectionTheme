@@ -14,6 +14,7 @@ public class CameraInitial : MonoBehaviour
     private GameObject player;
     private GameObject UIs;
     private MoveCam CamMoveScript;
+    private GameObject BeginningSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +22,14 @@ public class CameraInitial : MonoBehaviour
         this.transform.localPosition = finalPos + new Vector3 (0.0f,InitialHeight,0.0f);
         player = GameObject.Find("Player");
         CamMoveScript = player.GetComponent<MoveCam>();
-
+        BeginningSound = GameObject.Find("BeginningSound");
         //disable camera controller at first and look from sky
         CamMoveScript.enabled = false;
         this.transform.LookAt(player.transform);
         this.transform.RotateAround(transform.position, transform.forward, 180f);
         UIs = GameObject.Find("UIs");
         UIs.SetActive(false);
+        BeginningSound.SetActive(true);
     }
 
     // Update is called once per frame
