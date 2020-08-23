@@ -37,8 +37,7 @@ There are currently 3 different endings waiting for you to explore!
 
 
 
-**How to ow to run it**
-
-Simply unzip the downloaded zip file and double click the "UniJam2020.exe" file if you are on windows, double click the "UNIJAM20_FriendStudio"  if you are on Mac.
 
 
+By Della Mou, Chenghao Li, Chloe Zhu
+23/08/2020
