@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrueEndDisplay.unity
     guid: 474d324144ba39c4fb4d0b0236f366d8
+  - enabled: 1
+    path: Assets/Scenes/TrueEndMiddle.unity
+    guid: 9b30b156719fd1943a7e2a3df8eb0c60
   m_configObjects: {}
