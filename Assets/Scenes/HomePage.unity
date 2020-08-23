@@ -6327,7 +6327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 401654807}
   AchiMenu: {fileID: 2022190573}
-  CreMenu: {fileID: 0}
+  CreMenu: {fileID: 1800520322}
   MainCam: {fileID: 1590747211}
   AchiCam: {fileID: 2108504429}
   MainSun: {fileID: 1641183508}
@@ -8756,6 +8756,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704689470}
   m_CullTransparentMesh: 0
+--- !u!4 &1719786356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4184875029496670, guid: ec2a6eb55d6bac64f8e60e43c3cb20ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 171109182}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1729290582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9168,8 +9174,8 @@ RectTransform:
   m_Children:
   - {fileID: 1927805682}
   - {fileID: 1193341530}
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 1719786356}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
