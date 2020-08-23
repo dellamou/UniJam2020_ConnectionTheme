@@ -5727,8 +5727,8 @@ MonoBehaviour:
   jumpSpeed: 3
   gravity: 10
   playerCamera: {fileID: 2087051623}
-  lookSpeed: 6
-  lookXLimit: 45
+  lookSpeed: 2
+  lookXLimit: 60
   energy: 100
   fullEnergy: 100
   energyTakePerMS: 2
