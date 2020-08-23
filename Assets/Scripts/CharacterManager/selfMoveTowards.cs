@@ -60,7 +60,7 @@ public class selfMoveTowards : MonoBehaviour
                     // load different scene according to the state
                     if (GameObject.FindWithTag("Player").GetComponent<ItemCollectionManager>().photo)
                     {
-                        SceneManager.LoadScene("TrueEnd");
+                        SceneManager.LoadScene("TrueEndMiddle");
                     }
                     else
                     {
