@@ -8,12 +8,9 @@ public class ActivateObj : MonoBehaviour
     private IEnumerator coroutine;
     [SerializeField]
     private float waitTime = 1f;
-    private GameObject EyeLidTop;
-    private GameObject EyeLidBtm;
     [SerializeField]
     private GameObject model;
-    public Animator anim1;
-    public Animator anim2;
+    
     // Start is called before the first frame update
     void Start()
     {   
@@ -33,12 +30,6 @@ public class ActivateObj : MonoBehaviour
 
     private IEnumerator waitForSeconds(float WaitTime) {
         yield return new WaitForSeconds(WaitTime);
-
-        EyeLidBtm = GameObject.Find("EyeLidBtm");
-        EyeLidTop = GameObject.Find("EyeLidTop");
-
         model.SetActive(true);
-        anim1.enabled = false;
-        anim2.enabled = false;
     }
 }

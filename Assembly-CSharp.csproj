@@ -88,6 +88,7 @@
      <Compile Include="Assets\Scripts\CharacterManager\ActivateObj.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\CharacterTurning.cs" />
+     <Compile Include="Assets\Scripts\CharacterManager\EscOpenSetting.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\EyeLidController.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\FriendMove.cs" />
      <Compile Include="Assets\Scripts\CharacterManager\PressEOpenGuide.cs" />
@@ -111,6 +112,7 @@
      <Compile Include="Assets\Scripts\PlayerCamManager\GoodEndingInitial.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerCamManager\MoveCam.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\EscOpenSettings.cs" />
      <Compile Include="Assets\Scripts\SceneManager\LoadSceneAfterTime.cs" />
      <Compile Include="Assets\Scripts\SceneManager\buttonController.cs" />
      <Compile Include="Assets\Scripts\SceneManager\mouseHangOverSound.cs" />
