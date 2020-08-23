@@ -68,11 +68,11 @@ public class recordSaver : MonoBehaviour
                 //record.be = true;
                 break;
             case "good":
-                PlayerPrefs.SetInt("be", 1);
+                PlayerPrefs.SetInt("ge", 1);
                 //record.ge = true;
                 break;
             case "true":
-                PlayerPrefs.SetInt("be", 1);
+                PlayerPrefs.SetInt("te", 1);
                 //record.te = true;
                 break;
             case "":

@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.M))
         {
-            this.GetComponent<AudioSource>().clip = audioClips[0];
+            this.GetComponent<AudioSource>().clip = audioClips[6];
             this.GetComponent<AudioSource>().Play();
         }
     }
