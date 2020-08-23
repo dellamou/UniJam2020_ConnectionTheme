@@ -8,6 +8,10 @@ public class EscOpenSettings : MonoBehaviour
 {
     public GameObject BGM;
     public GameObject SoundFX;
+    public GameObject Setting;
+    public GameObject Cam;
+    public GameObject Player;
+    public GameObject UIs;
 
     private void Start()
     {
@@ -28,5 +32,15 @@ public class EscOpenSettings : MonoBehaviour
     public void MuteFX()
     {
         SoundFX.SetActive(!SoundFX.activeSelf);
+    }
+
+    public void Resume()
+    {
+        Setting.SetActive(false);
+        Cam.SetActive(true);
+        Player.GetComponent<MoveCam>().enabled = true;
+        UIs.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
