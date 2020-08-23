@@ -60,4 +60,8 @@ public class buttonController : MonoBehaviour
     {
         SceneManager.LoadScene("HomePage");
     }
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 }
